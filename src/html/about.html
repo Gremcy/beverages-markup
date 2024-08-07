@@ -1,0 +1,420 @@
+{% set body_class = "about-page" %} {% extends "./_layout.html" %} {% block
+content %}
+<main class="about-main">
+  {% include './components/_header.html' %}
+
+  <div class="about-first">
+    <div class="about-first-bg">
+      <picture>
+          <source media="(max-width: 650px)" srcset="/images/68.png">
+          <source media="(max-width: 999px)" srcset="/images/67.png">
+          <source media="(min-width: 1000px)" srcset="/images/55.png">
+          <img src="/images/55.png" alt="img">
+          
+      </picture>
+    </div>
+    <div class="about-first-content">
+      <div class="about-first-logo">
+        <img src="/images/logo4.svg" alt="img">
+      </div>
+      <div class="about-first-text">
+        для справжніх і спраглих нас
+      </div>
+    </div>
+  </div>
+
+  <div class="about-wrapper">
+
+    <div class="about-sidebar">
+      <div class="about-sidebar-inner">
+        <a href="#about-anchor1" class="about-sidebar-item sec1">Про нас</a>
+        <a href="#about-anchor2" class="about-sidebar-item sec2">Виробництво</a>
+        <a href="#about-anchor3" class="about-sidebar-item sec3">Команда</a>
+        <a href="#about-anchor4" class="about-sidebar-item sec4">Партнери</a>
+        <a href="#about-anchor5" class="about-sidebar-item sec5">Контакти</a>
+      </div>
+    </div>
+
+    <div class="about-content">
+
+      <div class="about-about">
+        <div class="about-anchor1" id="about-anchor1"></div>
+        <div class="about-about-for-animation" id="section1"></div>
+        <div class="about-about-item">
+          <div class="about-about-item-left">
+            <div class="about-about-item-left-title">
+              Спрага до волі
+            </div>
+            <div class="about-about-item-left-description">
+              Нашу команду об’єднала спільна цінність – ставка на свободу від джанк-фуд і запуск проєкту Eat Easy. Ми почали просто і класно годувати українців, а далі стало цікаво, чи зможемо здорово та корисно напоїти людей. Було створене сучасне виробництво за високими стандартами якості, і за кілька років ми стали амбасадором і лідером продажів комбучі в Україні. 
+              Це було вже не стільки про здорову їжу, скільки народження бренду про здорові напої.
+            </div>
+          </div>
+          <div class="about-about-item-right">
+            <div class="about-about-item-right-year">2014</div>
+            <div class="about-about-item-right-photo">
+              <img src="/images/56.png" alt="i">
+            </div>
+          </div>
+        </div>
+        <div class="about-about-item">
+          <div class="about-about-item-left">
+            <div class="about-about-item-left-title">
+              Спрага до життя
+            </div>
+            <div class="about-about-item-left-description">
+              Українці вкотре демонструють всьому світові шалену жагу до життя, а ми, як ніколи, впевнені у своїй справі.SPRAGA для поціновувачів натуральних безалкогольних напоїв. Для справжніх і спраглих нас. А всі ми – різні. Юні, як літо, і літні, 
+              як осінь. Менш заможні й більш вибагливі. Фанати солоденького й прихильники кислинки.
+            </div>
+          </div>
+          <div class="about-about-item-right">
+            <div class="about-about-item-right-year">2022</div>
+            <div class="about-about-item-right-photo">
+              <img src="/images/57.png" alt="i">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-manufacture" id="section2">
+        <div class="about-anchor2" id="about-anchor2"></div>
+        <div class="about-manufacture-title">
+          Виробництво
+        </div>
+        <div class="about-manufacture-images">
+          <div class="about-manufacture-images-line">
+            <div class="about-manufacture-images-line-one">
+              <img src="/images/58.png" alt="i">
+            </div>
+            <div class="about-manufacture-images-line-two">
+              <img src="/images/59.png" alt="i">
+            </div>
+          </div>
+          <div class="about-manufacture-images-line">
+            <div class="about-manufacture-images-line-two">
+              <img src="/images/60.png" alt="i">
+            </div>
+            <div class="about-manufacture-images-line-one">
+              <img src="/images/61.png" alt="i">
+            </div>
+          </div>
+        </div>
+        <div class="about-manufacture-advantages">
+          <div class="about-manufacture-advantages-item">
+            <div class="about-manufacture-advantages-item-name">
+              1000 <span>кв.м.</span>
+            </div>
+            <div class="about-manufacture-advantages-item-desc">
+              виробничих приміщень з індивідуальним технологічним обладнанням
+            </div>
+          </div>
+          <div class="about-manufacture-advantages-item">
+            <div class="about-manufacture-advantages-item-name">
+              Якість
+            </div>
+            <div class="about-manufacture-advantages-item-desc">
+              найвища якість сировини, контроль якості на всіх етапах виробництва
+            </div>
+          </div>
+          <div class="about-manufacture-advantages-item">
+            <div class="about-manufacture-advantages-item-name">
+              Норми
+            </div>
+            <div class="about-manufacture-advantages-item-desc">
+              високі санітарно-гігієнічні норми
+            </div>
+          </div>
+        </div>
+        <div class="about-manufacture-half">
+          <div class="about-manufacture-half-list">
+            <ul>
+              <li>Сучасне ферментаційне відділення з екстрактором, системою промивання та маркування, лінією розливу та герметизації</li>
+              <li>Усе обладнання ретельно очищається за допомогою CIP-мийки із застосуванням сертифікованих органічних дезінфікуючих засобів</li>
+              <li>Маніпуляції з сировиною проводяться безконтактно в закритій стерильній тарі</li>
+              <li>Кожна пляшка проходить безконтактне полоскання та дезінфекцію, щоб ви могли насолоджуватися смачним і безпечним продуктом.</li>
+              <li>Ми вимагаємо від нашої команди відповідального ставлення до процесу контролю готового продукту на всіх етапах виробництва.</li>
+            </ul>
+          </div>
+          <div class="about-manufacture-half-image">
+            <img src="/images/62.png" alt="i">
+          </div>
+        </div>
+        <div class="about-manufacture-standart">
+          <div class="about-manufacture-standart-left">
+            <div class="about-manufacture-standart-left-title">Стандарти якості</div>
+            <div class="about-manufacture-standart-left-desc">
+              Наш виробничий процес побудований з максимально відповідальним ставленням до усунення будь-яких можливих хвороботворних бактерій. Все виробниче обладнання проходить ретельне потрійне очищення з миттям CIP із застосуванням сертифікованих органічних дезінфікуючих засобів. Всі виробничі маніпуляції з сирими продуктами здійснюють безконтактно в закритій стерильній тарі.
+            </div>
+          </div>
+          <div class="about-manufacture-standart-right">
+            <div class="about-manufacture-standart-right-text">
+              <p>Система безпеки харчових продуктів</p>
+              <p>HACCP та сертифікація ISO 22000: 2018.</p>
+            </div>
+            <div class="about-manufacture-standart-right-logos">
+              <div class="about-manufacture-standart-right-logos-el">
+                <img src="/images/63.png" alt="i">
+              </div>
+              <div class="about-manufacture-standart-right-logos-el">
+                <img src="/images/64.png" alt="i">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-manufacture-success">
+          <div class="about-manufacture-success-img">
+            <picture>
+                <source media="(max-width: 650px)" srcset="/images/69.png">
+                <source media="(max-width: 999px)" srcset="/images/65.png">
+                <source media="(min-width: 1000px)" srcset="/images/65.png">
+                <img src="/images/65.png" alt="img">
+            </picture>
+          </div>
+          <div class="about-manufacture-success-text">Ми використовуємо європейські стандарти, щоб бути успішними у всьому світі.</div>
+        </div>
+      </div>
+
+      <div class="about-team" id="section3">
+        <div class="about-anchor3" id="about-anchor3"></div>
+        <div class="about-team-first">
+          <div class="about-team-first-left">
+            Наші люди професіонали своєї справи
+          </div>
+          <div class="about-team-first-right">
+            <p>Наш продукт – це, в першу чергу, люди. Ми віримо, що енергія і здоров’я наших продуктів залежить від атмосфери та відносин між співробітниками в нашому колективі.</p>
+            <p>Наша команда складається з технологів із профільною освітою, які мають досвід роботи на масових виробництвах та добре володіють процесом і контролем системи. Це все – про професіоналів, натхнених однією спільною ідеєю.</p>
+          </div>
+        </div>
+        <div class="about-team-ceo">
+          <div class="about-team-ceo-left">
+            <div class="about-team-ceo-left-top">
+              <div class="about-team-ceo-left-title"> 
+                <img src="/images/icon18.svg" alt="i">
+                <span>spraga <br>  наша жага до автентичності</span>
+              </div>
+              <div class="about-team-ceo-left-desc"> 
+                <p>Наша місія полягає в тому, щоб популяризувати унікальні переваги та видатний смак легкої, чудово освіжаючої чайної комбучи. Ми взяли на себе зобов’язання зробити комбучу широко поширеною в Україні та Європі за доступною ціною</p>
+               <p> Наші головні цінності – високі стандарти якості та дбайлива турбота про здоров’я наших клієнтів.</p>
+                <p>Як любителі комбучі, ми з кожним днем вчимося робити її актуальнішою, привабливішою і цікавішою. </p>
+                <p>Напої SPRAGA живі. Грайливі. Смачні. Життєдайні. Іскристі! Вони надихають нас. Впевнені — сподобаються і вам. Варто тільки спробувати!</p>
+              </div>
+            </div>
+            <div class="about-team-ceo-left-autor">
+              <p>Олександр Губаренко </p>
+              <span>CEO Eat Easy</span>
+            </div>
+          </div>
+          <div class="about-team-ceo-right">
+            <img src="/images/66.png" alt="i">
+          </div>
+        </div>
+      </div>
+
+      <div class="buy-partners" id="section4">
+        <div class="about-anchor4" id="about-anchor4"></div>
+        <div class="home-buy-fluid">
+        <div class="home-buy-centered">
+          <div class="home-buy-title">Де купити spraga</div>
+          <div class="home-buy-category">
+            <div class="home-buy-category-name">
+              магазини
+            </div>
+            <div class="home-buy-category-container">
+              <div class="home-buy-category-element">
+                <img src="/images/13.png" alt="i">
+              </div>
+              <div class="home-buy-category-element">
+                <img src="/images/14.png" alt="i">
+              </div>
+              <div class="home-buy-category-element">
+                <img src="/images/15.png" alt="i">
+              </div>
+              <div class="home-buy-category-element">
+                <img src="/images/16.png" alt="i">
+              </div>
+              <div class="home-buy-category-element">
+                <img src="/images/17.png" alt="i">
+              </div>
+              <div class="home-buy-category-element">
+                <img src="/images/18.png" alt="i">
+              </div>
+              <div class="home-buy-category-element">
+                <img src="/images/19.png" alt="i">
+              </div>
+              <div class="home-buy-category-element">
+                <img src="/images/20.png" alt="i">
+              </div>
+              <div class="home-buy-category-element">
+                <img src="/images/21.png" alt="i">
+              </div>
+              <div class="home-buy-category-element">
+                <img src="/images/22.png" alt="i">
+              </div>
+              <div class="home-buy-category-element">
+                <img src="/images/23.png" alt="i">
+              </div>
+              <div class="home-buy-category-element">
+                <img src="/images/24.png" alt="i">
+              </div>
+              <div class="home-buy-category-element">
+                <img src="/images/25.png" alt="i">
+              </div>
+              <div class="home-buy-category-element">
+                <img src="/images/26.png" alt="i">
+              </div>
+              <div class="home-buy-category-element">
+                <img src="/images/27.png" alt="i">
+              </div>
+              <div class="home-buy-category-element">
+                <img src="/images/28.png" alt="i">
+              </div>
+              <div class="home-buy-category-element">
+                <img src="/images/29.png" alt="i">
+              </div>
+              <div class="home-buy-category-element">
+                <img src="/images/30.png" alt="i">
+              </div>
+              <div class="home-buy-category-element">
+                <img src="/images/31.png" alt="i">
+              </div>
+            </div>
+          </div>
+          <div class="home-buy-category">
+            <div class="home-buy-category-name">
+              заклади
+            </div>
+            <div class="home-buy-category-container">
+              <div class="home-buy-category-element">
+                <img src="/images/32.png" alt="i">
+              </div>
+              <div class="home-buy-category-element">
+                <img src="/images/33.png" alt="i">
+              </div>
+              <div class="home-buy-category-element">
+                <img src="/images/34.png" alt="i">
+              </div>
+              <div class="home-buy-category-element">
+                <img src="/images/35.png" alt="i">
+              </div>
+              <div class="home-buy-category-element">
+                <img src="/images/36.png" alt="i">
+              </div>
+            </div>
+          </div>
+          <div class="home-buy-category">
+            <div class="home-buy-category-name">
+              азс
+            </div>
+            <div class="home-buy-category-container">
+              <div class="home-buy-category-element">
+                <img src="/images/37.png" alt="i">
+              </div>
+              <div class="home-buy-category-element">
+                <img src="/images/38.png" alt="i">
+              </div>
+              <div class="home-buy-category-element">
+                <img src="/images/39.png" alt="i">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="about-contact" id="section5">
+        <div class="about-anchor5" id="about-anchor5"></div>
+        <div class="about-contact-title">
+          Контакти
+        </div>
+          <div class="buy-contact">
+          <div class="about-contact-left">
+            <div class="about-contact-left-address">
+              <img src="/images/icon19.svg" alt="i">
+              <span>Адреса виробника ТОВ «Іт Ізі»<br>
+              Академіка Глушкова, 12A, <br>
+              Київ, 03187 Україна</span>
+            </div>
+            <a href="mailto:spraga@eateasy.ua" class="about-contact-left-email">
+              <img src="/images/icon20.svg" alt="i">
+              <span>spraga@eateasy.ua</span>
+            </a>
+          </div>
+          
+          <div class="buy-contact-form-wrapper">
+            <form action="#" class="buy-contact-form">
+              <div class="buy-contact-form-title">
+                Маєте запитання?
+              </div>
+              <div class="buy-contact-form-description">
+                Заповніть форму і наш менеджер зв’яжеться з вами
+              </div>
+
+              <div class="hire-modal-input error">
+                <input type="text" class="inputText" />
+                <span class="floating-label">
+                  Ваше прізвище та ім’я
+                </span>
+                <div class="hire-modal-input-error-text">
+                  Заповніть, будь ласка, поле
+                </div>
+              </div>
+              <div class="hire-modal-input">
+                <input type="text" class="inputText" />
+                <span class="floating-label">
+                  Номер телефону
+                </span>
+                <div class="hire-modal-input-error-text">
+                  використовуйте тільки цифри
+                </div>
+              </div>
+              <div class="hire-modal-input">
+                <input type="text" class="inputText" />
+                <span class="floating-label">
+                  E-mail
+                </span>
+                <div class="hire-modal-input-error-text">
+                  Заповніть, будь ласка, поле
+                </div>
+              </div>
+              <div class="hire-modal-input">
+                <input type="text" class="inputText" />
+                <span class="floating-label">
+                Запитання
+                </span>
+                <div class="hire-modal-input-error-text">
+                  Заповніть, будь ласка, поле
+                </div>
+              </div>
+
+              <button class="buy-contact-form-submit" type="submit">
+                <div class="buy-contact-form-submit-circle"></div>
+                <span>відправити</span>
+              </button>
+
+            </form>
+          </div>
+          
+          <!-- <div class="buy-contact-success-wrapper">
+            <canvas id="bubbles"></canvas>
+            <div class="buy-contact-success-content">
+              <div class="buy-contact-success-title">Чудово!</div>
+              <div class="buy-contact-success-text">
+                <p>Ми отримали вашу заявку.</p>
+                <p>Наш менеджер зв’яжеться з вами найближчим часом.</p>
+              </div>
+            </div>
+          </div> -->
+
+        </div>
+      </div>
+
+      
+
+    </div>
+  </div>
+
+ 
+  {% include './components/_footer.html' %}
+</main>
+
+{% endblock %} {% block footer_scripts %} {% endblock %}

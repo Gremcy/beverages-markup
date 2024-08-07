@@ -1,0 +1,30 @@
+* {
+  cursor: url("../images/cursor.svg"), auto; // change to image
+}
+
+#avatars-top-video {
+  cursor: url("../images/cursor-play.svg"), auto;
+  &.play {
+    cursor: url("../images/cursor-pause.svg"), auto;
+  }
+}
+
+// .cursor {
+//   position: fixed;
+//   width: 30px;
+//   height: 30px;
+//   top: -50%;
+//   left: -50%;
+//   margin: -15px 0 0 -15px;
+//   border-radius: 50%;
+//   background-color: #5910ff;
+//   mix-blend-mode: difference;
+//   backface-visibility: hidden;
+//   transition: transform 0.2s ease-out;
+//   z-index: 1000;
+//   pointer-events: none;
+
+//   &.is-hidden {
+//     opacity: 0;
+//   }
+// }

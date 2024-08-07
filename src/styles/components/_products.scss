@@ -1,0 +1,73 @@
+.products-page {
+  .home-cans-fluid {
+    margin-bottom: 120px;
+    @include md {
+      margin-bottom: 90px;
+    }
+    @include md {
+      margin-bottom: 60px;
+    }
+  }
+  .home-products {
+    padding-top: 0;
+  }
+  .home-products-item:nth-child(3) {
+    display: block;
+  }
+}
+
+.products-main {
+  width: 100%;
+  padding-top: 140px;
+  @include md {
+    padding-top: 120px;
+  }
+  @include sm {
+    padding-top: 85px;
+  }
+}
+
+.products-title {
+  font-family: 'Tenor Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 91%;
+  color: #343434;
+  text-align: center;
+  margin-bottom: 40px;
+  p {
+    display: block;
+  }
+  @include md {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+  @include sm {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+}
+.products-title-error {
+  width: 35.333333%; /* 480/1440 */
+
+  font-family: 'Myriad Pro';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.32px;
+  text-align: center;
+  color: #ff0041;
+  margin: -20px auto 40px;
+  @include md {
+    width: 62.5%; /* 480/768 */
+    margin: -10px auto 40px;
+  }
+  @include sm {
+    width: 100%;
+    padding: 0 20px;
+    font-size: 13px;
+    margin: -10px auto 20px;
+  }
+}

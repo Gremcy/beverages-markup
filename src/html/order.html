@@ -1,0 +1,295 @@
+{% set body_class = "order-page" %} {% extends "./_layout.html" %} {% block
+content %}
+<main class="order-main">
+  {% include './components/_header.html' %}
+
+  <form action="#" class="order-fluid">
+    <div class="order-content">
+      <div class="order-left">
+        <div class="order-left-title">Оформлення замовлення</div>
+        <div class="order-left-personal active">
+          <div class="order-left-personal-num">1</div>
+          <div class="order-left-personal-data">
+            <div class="order-left-personal-data-heading">Особисті дані</div>
+            <div class="order-left-personal-input error">
+              <input type="text" placeholder="Ваше прізвище та ім’я" />
+              <div class="error-text">Error</div>
+            </div>
+            <div class="order-left-personal-input">
+              <input type="text" placeholder="Номер телефону" />
+              <div class="error-text">Error</div>
+            </div>
+            <div class="order-left-personal-input">
+              <input type="text" placeholder="E-mail" />
+              <div class="error-text">Error</div>
+            </div>
+          </div>
+        </div>
+        <div class="order-left-delivery">
+          <div class="order-left-delivery-num">2</div>
+          <div class="order-left-delivery-data">
+            <div class="order-left-delivery-data-title">Доставка</div>
+            <div class="order-left-delivery-radio">
+              <input
+                type="radio"
+                id="Number 1"
+                name="delivery"
+                value="У відділення Нової пошти"
+                checked
+              />
+              <label for="Number 1"
+                >У відділення Нової пошти <span>(0 грн)</span></label
+              >
+              <input
+                type="radio"
+                id="Number 2"
+                name="delivery"
+                value="Number 2"
+              />
+              <label for="Number 2"
+                >Кур’єрска доставка Нова пошта <span>(120 грн)</span></label
+              >
+              <input
+                type="radio"
+                id="Number 3"
+                name="delivery"
+                value="Number 3"
+              />
+              <label for="Number 3"
+                >Самомвивіз <span>(просп. Академіка Глушкова, 12А)</span></label
+              >
+            </div>
+            <div class="order-left-delivery-data-input">
+              <input type="text" placeholder="Місто/Село" />
+              <div class="error-text">Error</div>
+            </div>
+            <div class="order-left-delivery-data-input">
+              <input type="text" placeholder="Відділення Нової пошти" />
+              <div class="error-text">Error</div>
+            </div>
+          </div>
+        </div>
+        <div class="order-left-delivery pay">
+          <div class="order-left-delivery-num">3</div>
+          <div class="order-left-delivery-data">
+            <div class="order-left-delivery-data-title">Оплата</div>
+            <div class="order-left-delivery-radio">
+              <input
+                type="radio"
+                id="Number 1"
+                name="pay"
+                value="Онлайн оплата (Visa / Mastercard)"
+                checked
+              />
+              <label for="Number 1"
+                >Онлайн оплата (Visa / Mastercard)<span>(0 грн)</span></label
+              >
+            </div>
+            <div class="order-promocode">
+              <div class="order-promocode-title">Промокод</div>
+              <div class="order-promocode-input success">
+                <input type="text" placeholder="Введіть промокод" />
+                <div class="order-promocode-input-error">
+                  неправильний промокод
+                </div>
+                <div class="order-promocode-input-success">
+                  промокод застосовано
+                </div>
+              </div>
+              <div class="order-promocode-btn">застосувати</div>
+              <div class="order-promocode-notice">
+                Промокод не діє на акційні товари
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="order-left-copyright">
+          Продовжуючи, ви підтверджуєте, що ознайомлені та приймаєте умови
+          <a href="/publ-oferta.pdf" target="_blank"
+            >Договору публічної оферти.</a
+          >
+        </div>
+        <button type="submit" class="order-left-submit-btn disable">
+          оплатити
+        </button>
+      </div>
+      <div class="order-right">
+        <div class="cart-goods">
+          <div class="cart-goods-item">
+            <div class="cart-goods-item-left">
+              <img src="/images/71.png" alt="i" />
+            </div>
+            <div class="cart-goods-item-right">
+              <div class="cart-goods-item-right-top">
+                <div class="cart-goods-item-right-top-text">
+                  <div class="cart-goods-item-right-top-text-name">
+                    Комбуча “гранат”
+                  </div>
+                  <div class="cart-goods-item-right-top-text-pack">
+                    жерстяна банка 330 мл
+                  </div>
+                </div>
+                <div class="cart-goods-item-right-top-del-btn">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                  >
+                    <rect
+                      x="0.493164"
+                      y="11.1133"
+                      width="14.9374"
+                      height="1.2"
+                      rx="0.6"
+                      transform="rotate(-45 0.493164 11.1133)"
+                      fill="#787878"
+                    />
+                    <rect
+                      x="0.910156"
+                      y="0.5"
+                      width="14.9374"
+                      height="1.2"
+                      rx="0.6"
+                      transform="rotate(45 0.910156 0.5)"
+                      fill="#787878"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="cart-goods-item-right-container">
+                Ящик <span>(12 шт х 330 мл)</span>
+              </div>
+              <div class="cart-goods-item-right-down">
+                <div class="cart-goods-item-right-down-quantity">
+                  <div class="cart-goods-item-right-down-quantity-minus">
+                    <img src="/images/minus.svg" alt="i" />
+                  </div>
+                  <div class="cart-goods-item-right-down-quantity-num">1</div>
+                  <div class="cart-goods-item-right-down-quantity-plus">
+                    <img src="/images/plus.svg" alt="i" />
+                  </div>
+                </div>
+                <div class="cart-goods-item-right-down-price-wrapper">
+                  <div class="cart-goods-item-right-down-price">600 грн</div>
+                  <div class="cart-goods-item-right-down-price-action show">
+                    <span class="action-old-price">684 грн</span>
+                    <div class="action-new-price-wrapper">
+                      <span class="action-new-price-descr">з промокодом </span>
+                      <span class="action-new-price">588 грн</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cart-goods-item">
+            <div class="cart-goods-item-left">
+              <img src="/images/72.png" alt="i" />
+            </div>
+            <div class="cart-goods-item-right">
+              <div class="cart-goods-item-right-top">
+                <div class="cart-goods-item-right-top-text">
+                  <div class="cart-goods-item-right-top-text-name">
+                    Комбуча “кола”
+                  </div>
+                  <div class="cart-goods-item-right-top-text-pack">
+                    скляна пляшка 330 мл
+                  </div>
+                </div>
+                <div class="cart-goods-item-right-top-del-btn">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                  >
+                    <rect
+                      x="0.493164"
+                      y="11.1133"
+                      width="14.9374"
+                      height="1.2"
+                      rx="0.6"
+                      transform="rotate(-45 0.493164 11.1133)"
+                      fill="#787878"
+                    />
+                    <rect
+                      x="0.910156"
+                      y="0.5"
+                      width="14.9374"
+                      height="1.2"
+                      rx="0.6"
+                      transform="rotate(45 0.910156 0.5)"
+                      fill="#787878"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="cart-goods-item-right-container">
+                Ящик <span>(12 шт х 330 мл)</span>
+              </div>
+              <div class="cart-goods-item-right-down">
+                <div class="cart-goods-item-right-down-quantity">
+                  <div class="cart-goods-item-right-down-quantity-minus">
+                    <img src="/images/minus.svg" alt="i" />
+                  </div>
+                  <div class="cart-goods-item-right-down-quantity-num">1</div>
+                  <div class="cart-goods-item-right-down-quantity-plus">
+                    <img src="/images/plus.svg" alt="i" />
+                  </div>
+                </div>
+                <div class="cart-goods-item-right-down-price-wrapper">
+                  <div class="cart-goods-item-right-down-price show">
+                    600 грн
+                  </div>
+                  <div class="cart-goods-item-right-down-price-action">
+                    <span class="action-old-price">684 грн</span>
+                    <div class="action-new-price-wrapper">
+                      <span class="action-new-price-descr">з промокодом </span>
+                      <span class="action-new-price">588 грн</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="order-right-total">
+            <div class="order-right-total-delivery">
+              <div class="order-right-total-delivery-name">Доставка:</div>
+              <div class="order-right-total-delivery-sum">0 грн</div>
+            </div>
+            <div class="order-right-total-price">
+              <div class="order-right-total-price-name">Всього:</div>
+              <div class="order-right-total-price-sum">1200 грн</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="order-empty show">
+          <div class="order-empty-title">Нажаль, кошик порожній.</div>
+          <div class="order-empty-text">
+            Поверніться до товарів і додайте їх в кошик.
+          </div>
+          <a href="/" class="order-empty-btn">в магазин</a>
+        </div>
+      </div>
+      <div class="order-mobile-copyright">
+        <div class="order-mobile-copyright-text">
+          Продовжуючи, ви підтверджуєте, що ознайомлені та приймаєте умови
+          <a href="/publ-oferta.pdf" target="_blank"
+            >Договору публічної оферти.</a
+          >
+        </div>
+        <button type="submit" class="order-mobile-copyright-btn disable">
+          оплатити
+        </button>
+      </div>
+    </div>
+  </form>
+
+  {% include './components/_footer.html' %}
+</main>
+
+{% endblock %} {% block footer_scripts %} {% endblock %}

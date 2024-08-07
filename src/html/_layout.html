@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  {% include './components/_page-head.html' %}
+</head>
+
+<body class="{{ body_class }}">
+  <div class="fluid-wrapper">
+    <div class="menu-overlay"></div>
+
+    <!-- <div class="cursor js-cursor"></div> -->
+
+
+    {% include './components/_menu.html' %}
+    {% include './components/_cart.html' %}
+
+    {% block content %}
+    {% endblock %}
+
+    <!-- {% include './modals/_order-popup.html' %}
+    {% include './modals/_thanks-popup.html' %} -->
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="./js/main.js"></script>
+
+  {# Then add any custom js or explicitely for page #}
+  {% block footer_scripts %}
+  {% endblock %}
+</body>
+
+</html>

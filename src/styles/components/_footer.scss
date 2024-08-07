@@ -1,0 +1,175 @@
+.footer {
+  width: 100%;
+  padding: 40px 120px;
+  @include md {
+    padding: 40px 30px;
+  }
+  @include sm {
+    padding: 40px;
+  }
+}
+.footer-inner {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  position: relative;
+  z-index: 3;
+  @include md {
+    flex-direction: column;
+  }
+  @include sm {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.footer-logo {
+  @include md {
+    width: 135px;
+    margin-bottom: 30px;
+    img {
+      width: 100%;
+    }
+  }
+  @include sm {
+    width: 99px;
+    margin-bottom: 25px;
+  }
+}
+.footer-right {
+  width: 83%;
+  display: flex;
+  justify-content: space-between;
+  @include md {
+    width: 100%;
+    flex-direction: column;
+  }
+  @include sm {
+    width: 100%;
+  }
+}
+.footer-right-menu {
+  width: 99%;
+  display: flex;
+  justify-content: space-between;
+  @include md {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  @include sm {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.footer-right-menu-item {
+  font-family: "Myriad Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.04em;
+  color: #231f20;
+  @include md {
+    font-size: 16px;
+  }
+  @include sm {
+    font-size: 16px;
+    margin-bottom: 20px;
+    br {
+      display: none;
+    }
+  }
+}
+.footer-right-contact {
+  width: 32.109%;
+  margin-left: 2.6vw;
+  @include md {
+    width: 100%;
+    margin-left: 0;
+  }
+  @include sm {
+    max-width: 220px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.footer-right-contact-title {
+  font-family: "Myriad Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.04em;
+  color: #231f20;
+  margin-bottom: 10px;
+  @include md {
+    font-size: 16px;
+  }
+}
+.footer-right-contact-address {
+  font-family: "Myriad Pro";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.04em;
+  color: #231f20;
+  @include md {
+    font-size: 14px;
+  }
+  @include sm {
+    text-align: center;
+  }
+}
+.footer-right-contact-email {
+  display: block;
+  font-family: "Myriad Pro";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.04em;
+  color: #231f20;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  @include md {
+    font-size: 14px;
+  }
+}
+.footer-right-contact-social {
+  display: flex;
+  a {
+    display: block;
+    margin-right: 10px;
+  }
+}
+
+.footer-gremcy {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  color: rgba($color: #000000, $alpha: 0.4);
+  font-family: "Myriad Pro";
+  font-style: normal;
+  font-weight: 400;
+  margin-top: -13px;
+  span {
+    display: block;
+    margin-right: 5px;
+  }
+  a {
+    color: rgba($color: #000000, $alpha: 0.4);
+    text-decoration: underline;
+  }
+  @include md {
+    margin-top: 25px;
+  }
+  @include sm {
+    justify-content: center;
+  }
+}

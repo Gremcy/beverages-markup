@@ -1,0 +1,553 @@
+{% set body_class = "product-page" %} {% extends "./_layout.html" %} {% block
+content %}
+<main class="product-main">
+  {% include './components/_header.html' %}
+
+  <div class="product-first">
+    <div class="product-first-left">
+      <div class="product-first-slider-wrapper">
+        <div class="product-first-slider-arrows">
+          <div class="slick-prev">
+            <img src="/images/arr1.svg" alt="i" />
+          </div>
+          <div class="slick-next">
+            <img src="/images/arr2.svg" alt="i" />
+          </div>
+        </div>
+        <div class="product-first-slider">
+          <div class="product-first-slider-item">
+            <img src="/images/52.png" alt="i" />
+          </div>
+          <div class="product-first-slider-item">
+            <img src="/images/53.png" alt="i" />
+          </div>
+          <div class="product-first-slider-item">
+            <img src="/images/52.png" alt="i" />
+          </div>
+          <div class="product-first-slider-item">
+            <img src="/images/53.png" alt="i" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-first-right">
+      <!-- <div class="product-first-right-top-empty"></div> -->
+      <div class="product-first-right-center">
+        <div class="product-first-right-name">гранат</div>
+        <div class="product-first-right-about">
+          Свіжий і фруктовий
+          <div class="product-first-right-about-circle"></div>
+        </div>
+        <div class="product-first-right-description">
+          Легка й освіжаюча комбуча з чудовим міксом ферментованого чаю та
+          солодкого з легкою терпкою нотою гранату.
+        </div>
+        <div class="product-first-right-bottom">
+          <div class="product-first-right-bottom-probiotik">
+            <span>Живий напій</span>
+            <img src="/images/arr3.svg" alt="i" />
+            <span>пробіотик</span>
+          </div>
+          <div class="product-first-right-bottom-save">
+            Зберігати при температурі від +4°С до +8°С не більше 120 днів.
+          </div>
+        </div>
+        <div class="product-first-right-btns">
+          <div class="product-first-right-btns-el js-btn-bottles active">
+            скляна пляшка 330 мл
+          </div>
+          <div class="product-first-right-btns-el js-btn-cans">
+            жерстяна банка 330 мл
+          </div>
+        </div>
+      </div>
+      <div class="product-first-select">
+        <div class="product-first-select-container">
+          <div class="product-first-select-container-cans">
+            <img src="/images/cans.svg" alt="i" />
+          </div>
+          <div class="product-first-select-container-bottles show">
+            <img src="/images/bottles.svg" alt="i" />
+          </div>
+          <span>Ящик</span>
+        </div>
+        <div class="product-first-select-price">684 грн</div>
+        <div class="product-first-select-price-action show">
+          <div class="product-first-select-price-action-percent">-14%</div>
+          <div class="product-first-select-price-action-price">
+            <span class="action-old-price">684 грн</span>
+            <span class="action-new-price">588 грн</span>
+          </div>
+        </div>
+        <div class="product-first-select-quantity">
+          <div class="product-first-select-quantity-minus">
+            <img src="/images/minus.svg" alt="i" />
+          </div>
+          <div class="product-first-select-quantity-num">1</div>
+          <div class="product-first-select-quantity-plus">
+            <img src="/images/plus.svg" alt="i" />
+          </div>
+        </div>
+      </div>
+      <div class="product-first-addcart">
+        <div class="product-first-addcart-price">600 грн</div>
+        <div class="product-first-addcart-btn">додати в кошик</div>
+      </div>
+      <div class="product-first-nova">
+        <div class="product-first-nova-item">
+          <div class="product-first-nova-logo">
+            <img src="/images/nova.png" alt="i" />
+          </div>
+          <div class="product-first-nova-text">
+            Доставка здійснюється Новою поштою.<br />
+            У відділення - 0 грн. Кур’єрська доставка - 120 грн.
+          </div>
+        </div>
+        <div class="product-first-nova-item">
+          <div class="product-first-nova-logo">
+            <img src="/images/geoicon.svg" alt="i" />
+          </div>
+          <div class="product-first-nova-text">
+            Самовивіз за адресою просп. Академіка Глушкова, 12А - безкоштовно.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-advantage">
+    <div class="product-advantage-container">
+      <div class="product-advantage-item">
+        <div class="product-advantage-item-icon">
+          <img src="/images/icon10.svg" alt="i" />
+        </div>
+        <div class="product-advantage-item-text">живий пробіотик</div>
+      </div>
+      <div class="product-advantage-item">
+        <div class="product-advantage-item-icon">
+          <img src="/images/icon11.svg" alt="i" />
+        </div>
+        <div class="product-advantage-item-text">натуральні інгрідієнти</div>
+      </div>
+      <div class="product-advantage-item">
+        <div class="product-advantage-item-icon">
+          <img src="/images/icon12.svg" alt="i" />
+        </div>
+        <div class="product-advantage-item-text">містить вітаміни</div>
+      </div>
+      <div class="product-advantage-item">
+        <div class="product-advantage-item-icon">
+          <img src="/images/icon13.svg" alt="i" />
+        </div>
+        <div class="product-advantage-item-text">підходить веганам</div>
+      </div>
+      <div class="product-advantage-item">
+        <div class="product-advantage-item-icon">
+          <img src="/images/icon14.svg" alt="i" />
+        </div>
+        <div class="product-advantage-item-text">з соком</div>
+      </div>
+      <div class="product-advantage-item">
+        <div class="product-advantage-item-icon">
+          <img src="/images/icon15.svg" alt="i" />
+        </div>
+        <div class="product-advantage-item-text">природна газація</div>
+      </div>
+      <div class="product-advantage-item">
+        <div class="product-advantage-item-icon">
+          <img src="/images/icon16.svg" alt="i" />
+        </div>
+        <div class="product-advantage-item-text">низький рівень цукру</div>
+      </div>
+      <div class="product-advantage-item">
+        <div class="product-advantage-item-icon">
+          <img src="/images/icon17.svg" alt="i" />
+        </div>
+        <div class="product-advantage-item-text">безалкогольний продукт</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-third">
+    <div class="product-third-left">
+      <div class="product-third-left-top">
+        <div class="product-third-left-title">Комбуча spraga</div>
+        <div class="product-third-left-text">
+          <p>
+            це функціональний напій, який має профілактичну та лікувальну дію:
+          </p>
+          <ul>
+            <li>
+              Сприяє регідратації організму за рахунок спільної дії вуглеводів і
+              електролітів
+            </li>
+            <li>Покращує працездатність м'язів, забезпечуючи їх енергією</li>
+            <li>Зміцнює імунну систему</li>
+            <li>
+              Коктейль з біологічно активних речовин і органічних і неорганічних
+              кислот живить клітини товстого кишечника і покращує його роботу
+            </li>
+            <li>завдяки пробіотикам і пребіотикам комбучі</li>
+          </ul>
+        </div>
+      </div>
+      <div class="product-third-left-bottom">
+        <div class="product-third-left-title">Енергетична цінність</div>
+        <div class="product-third-left-table">
+          <div class="product-third-left-table-el">
+            <div class="product-third-left-table-el-left">
+              калорійність на 100 мл продукту
+            </div>
+            <div class="product-third-left-table-el-right">25,2 ккал</div>
+          </div>
+          <div class="product-third-left-table-el">
+            <div class="product-third-left-table-el-left">жири</div>
+            <div class="product-third-left-table-el-right">0 г</div>
+          </div>
+          <div class="product-third-left-table-el">
+            <div class="product-third-left-table-el-left">вуглеводи</div>
+            <div class="product-third-left-table-el-right">6,5 г</div>
+          </div>
+          <div class="product-third-left-table-el">
+            <div class="product-third-left-table-el-left">білки</div>
+            <div class="product-third-left-table-el-right">0 г</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-third-right">
+      <img src="/images/54.png" alt="i" />
+    </div>
+  </div>
+
+  <div class="home-buy-fluid">
+    <div class="home-buy-centered">
+      <div class="home-buy-title">Де купити spraga</div>
+      <div class="home-buy-category">
+        <div class="home-buy-category-name">магазини</div>
+        <div class="home-buy-category-container">
+          <div class="home-buy-category-element">
+            <img src="/images/13.png" alt="i" />
+          </div>
+          <div class="home-buy-category-element">
+            <img src="/images/14.png" alt="i" />
+          </div>
+          <div class="home-buy-category-element">
+            <img src="/images/15.png" alt="i" />
+          </div>
+          <div class="home-buy-category-element">
+            <img src="/images/16.png" alt="i" />
+          </div>
+          <div class="home-buy-category-element">
+            <img src="/images/17.png" alt="i" />
+          </div>
+          <div class="home-buy-category-element">
+            <img src="/images/18.png" alt="i" />
+          </div>
+          <div class="home-buy-category-element">
+            <img src="/images/19.png" alt="i" />
+          </div>
+          <div class="home-buy-category-element">
+            <img src="/images/20.png" alt="i" />
+          </div>
+          <div class="home-buy-category-element">
+            <img src="/images/21.png" alt="i" />
+          </div>
+          <div class="home-buy-category-element">
+            <img src="/images/22.png" alt="i" />
+          </div>
+          <div class="home-buy-category-element">
+            <img src="/images/23.png" alt="i" />
+          </div>
+          <div class="home-buy-category-element">
+            <img src="/images/24.png" alt="i" />
+          </div>
+          <div class="home-buy-category-element">
+            <img src="/images/25.png" alt="i" />
+          </div>
+          <div class="home-buy-category-element">
+            <img src="/images/26.png" alt="i" />
+          </div>
+          <div class="home-buy-category-element">
+            <img src="/images/27.png" alt="i" />
+          </div>
+          <div class="home-buy-category-element">
+            <img src="/images/28.png" alt="i" />
+          </div>
+          <div class="home-buy-category-element">
+            <img src="/images/29.png" alt="i" />
+          </div>
+          <div class="home-buy-category-element">
+            <img src="/images/30.png" alt="i" />
+          </div>
+          <div class="home-buy-category-element">
+            <img src="/images/31.png" alt="i" />
+          </div>
+        </div>
+      </div>
+      <div class="home-buy-category">
+        <div class="home-buy-category-name">заклади</div>
+        <div class="home-buy-category-container">
+          <div class="home-buy-category-element">
+            <img src="/images/32.png" alt="i" />
+          </div>
+          <div class="home-buy-category-element">
+            <img src="/images/33.png" alt="i" />
+          </div>
+          <div class="home-buy-category-element">
+            <img src="/images/34.png" alt="i" />
+          </div>
+          <div class="home-buy-category-element">
+            <img src="/images/35.png" alt="i" />
+          </div>
+          <div class="home-buy-category-element">
+            <img src="/images/36.png" alt="i" />
+          </div>
+        </div>
+      </div>
+      <div class="home-buy-category">
+        <div class="home-buy-category-name">азс</div>
+        <div class="home-buy-category-container">
+          <div class="home-buy-category-element">
+            <img src="/images/37.png" alt="i" />
+          </div>
+          <div class="home-buy-category-element">
+            <img src="/images/38.png" alt="i" />
+          </div>
+          <div class="home-buy-category-element">
+            <img src="/images/39.png" alt="i" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-other">
+    <div class="product-other-title">Інші напої</div>
+    <div class="product-other-slider-wrapper">
+      <div class="product-other-slider-arrows">
+        <div class="slick-prev">
+          <img src="/images/arr1.svg" alt="i" />
+        </div>
+        <div class="slick-next">
+          <img src="/images/arr2.svg" alt="i" />
+        </div>
+      </div>
+      <div class="product-other-slider">
+        <div class="product-other-slider-item">
+          <a href="/product.html" class="product-other-slider-item-images">
+            <img src="/images/45.png" alt="i" />
+          </a>
+          <div class="product-other-slider-item-bottom">
+            <a href="/" class="home-products-item-bottom-buy">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+              >
+                <path
+                  d="M13.8192 28.488C15.0619 28.488 16.0693 27.4806 16.0693 26.2379C16.0693 24.9952 15.0619 23.9878 13.8192 23.9878C12.5765 23.9878 11.5691 24.9952 11.5691 26.2379C11.5691 27.4806 12.5765 28.488 13.8192 28.488Z"
+                  fill="#231F20"
+                />
+                <path
+                  d="M23.2162 28.488C24.4589 28.488 25.4663 27.4806 25.4663 26.2379C25.4663 24.9952 24.4589 23.9878 23.2162 23.9878C21.9735 23.9878 20.9661 24.9952 20.9661 26.2379C20.9661 27.4806 21.9735 28.488 23.2162 28.488Z"
+                  fill="#231F20"
+                />
+                <path
+                  d="M1.43346 5.86427C3.49747 5.86427 5.56148 5.86427 7.62548 5.86427C7.24551 5.57482 6.86554 5.2857 6.48557 4.99625C8.04328 10.4378 9.60134 15.8793 11.1591 21.3209C11.304 21.8271 11.769 22.1889 12.299 22.1889C16.4635 22.1889 20.6276 22.1889 24.7921 22.1889C25.3406 22.1889 25.7628 21.8234 25.932 21.3209C27.1712 17.6431 28.4105 13.9653 29.6497 10.2875C29.8976 9.55152 29.2454 8.79124 28.5098 8.79124C22.036 8.79124 15.5627 8.79124 9.08897 8.79124C7.56435 8.79124 7.56435 11.1555 9.08897 11.1555C15.5627 11.1555 22.036 11.1555 28.5098 11.1555C28.1298 10.6566 27.7498 10.1578 27.3698 9.65926C26.1306 13.3371 24.8914 17.0148 23.6522 20.6926C24.0322 20.4032 24.4121 20.1141 24.7921 19.8246C20.6276 19.8246 16.4635 19.8246 12.299 19.8246C12.6789 20.1141 13.0589 20.4032 13.4389 20.6926C11.8812 15.2511 10.3231 9.80956 8.7654 4.36802C8.6205 3.8614 8.15576 3.5 7.62582 3.5C5.56181 3.5 3.49781 3.5 1.4338 3.5C-0.0911573 3.5 -0.0911573 5.86427 1.43346 5.86427Z"
+                  fill="#231F20"
+                />
+              </svg>
+              <span>купити</span>
+            </a>
+            <!-- <div class="product-other-slider-item-volume">300 мл</div> -->
+            <div class="cart-goods-item-right-down-price-wrapper">
+              <div class="cart-goods-item-right-down-price show">
+                684 грн/12 шт
+              </div>
+              <div class="cart-goods-item-right-down-price-action">
+                <span class="action-old-price">684 грн</span>
+                <span class="action-new-price">588 грн/12 шт</span>
+              </div>
+            </div>
+            <a href="/product.html" class="product-other-slider-item-link">
+              про напій
+            </a>
+          </div>
+        </div>
+        <div class="product-other-slider-item">
+          <a href="/product.html" class="product-other-slider-item-images">
+            <img src="/images/46.png" alt="i" />
+          </a>
+          <div class="product-other-slider-item-bottom">
+            <a href="/" class="home-products-item-bottom-buy">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+              >
+                <path
+                  d="M13.8192 28.488C15.0619 28.488 16.0693 27.4806 16.0693 26.2379C16.0693 24.9952 15.0619 23.9878 13.8192 23.9878C12.5765 23.9878 11.5691 24.9952 11.5691 26.2379C11.5691 27.4806 12.5765 28.488 13.8192 28.488Z"
+                  fill="#231F20"
+                />
+                <path
+                  d="M23.2162 28.488C24.4589 28.488 25.4663 27.4806 25.4663 26.2379C25.4663 24.9952 24.4589 23.9878 23.2162 23.9878C21.9735 23.9878 20.9661 24.9952 20.9661 26.2379C20.9661 27.4806 21.9735 28.488 23.2162 28.488Z"
+                  fill="#231F20"
+                />
+                <path
+                  d="M1.43346 5.86427C3.49747 5.86427 5.56148 5.86427 7.62548 5.86427C7.24551 5.57482 6.86554 5.2857 6.48557 4.99625C8.04328 10.4378 9.60134 15.8793 11.1591 21.3209C11.304 21.8271 11.769 22.1889 12.299 22.1889C16.4635 22.1889 20.6276 22.1889 24.7921 22.1889C25.3406 22.1889 25.7628 21.8234 25.932 21.3209C27.1712 17.6431 28.4105 13.9653 29.6497 10.2875C29.8976 9.55152 29.2454 8.79124 28.5098 8.79124C22.036 8.79124 15.5627 8.79124 9.08897 8.79124C7.56435 8.79124 7.56435 11.1555 9.08897 11.1555C15.5627 11.1555 22.036 11.1555 28.5098 11.1555C28.1298 10.6566 27.7498 10.1578 27.3698 9.65926C26.1306 13.3371 24.8914 17.0148 23.6522 20.6926C24.0322 20.4032 24.4121 20.1141 24.7921 19.8246C20.6276 19.8246 16.4635 19.8246 12.299 19.8246C12.6789 20.1141 13.0589 20.4032 13.4389 20.6926C11.8812 15.2511 10.3231 9.80956 8.7654 4.36802C8.6205 3.8614 8.15576 3.5 7.62582 3.5C5.56181 3.5 3.49781 3.5 1.4338 3.5C-0.0911573 3.5 -0.0911573 5.86427 1.43346 5.86427Z"
+                  fill="#231F20"
+                />
+              </svg>
+              <span>купити</span>
+            </a>
+            <!-- <div class="product-other-slider-item-volume">300 мл</div> -->
+            <div class="cart-goods-item-right-down-price-wrapper">
+              <div class="cart-goods-item-right-down-price">684 грн/12 шт</div>
+              <div class="cart-goods-item-right-down-price-action show">
+                <span class="action-old-price">684 грн</span>
+                <span class="action-new-price">588 грн/12 шт</span>
+              </div>
+            </div>
+            <a href="/product.html" class="product-other-slider-item-link">
+              про напій
+            </a>
+          </div>
+        </div>
+        <div class="product-other-slider-item">
+          <a href="/product.html" class="product-other-slider-item-images">
+            <img src="/images/47.png" alt="i" />
+          </a>
+          <div class="product-other-slider-item-bottom">
+            <a href="/" class="home-products-item-bottom-buy">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+              >
+                <path
+                  d="M13.8192 28.488C15.0619 28.488 16.0693 27.4806 16.0693 26.2379C16.0693 24.9952 15.0619 23.9878 13.8192 23.9878C12.5765 23.9878 11.5691 24.9952 11.5691 26.2379C11.5691 27.4806 12.5765 28.488 13.8192 28.488Z"
+                  fill="#231F20"
+                />
+                <path
+                  d="M23.2162 28.488C24.4589 28.488 25.4663 27.4806 25.4663 26.2379C25.4663 24.9952 24.4589 23.9878 23.2162 23.9878C21.9735 23.9878 20.9661 24.9952 20.9661 26.2379C20.9661 27.4806 21.9735 28.488 23.2162 28.488Z"
+                  fill="#231F20"
+                />
+                <path
+                  d="M1.43346 5.86427C3.49747 5.86427 5.56148 5.86427 7.62548 5.86427C7.24551 5.57482 6.86554 5.2857 6.48557 4.99625C8.04328 10.4378 9.60134 15.8793 11.1591 21.3209C11.304 21.8271 11.769 22.1889 12.299 22.1889C16.4635 22.1889 20.6276 22.1889 24.7921 22.1889C25.3406 22.1889 25.7628 21.8234 25.932 21.3209C27.1712 17.6431 28.4105 13.9653 29.6497 10.2875C29.8976 9.55152 29.2454 8.79124 28.5098 8.79124C22.036 8.79124 15.5627 8.79124 9.08897 8.79124C7.56435 8.79124 7.56435 11.1555 9.08897 11.1555C15.5627 11.1555 22.036 11.1555 28.5098 11.1555C28.1298 10.6566 27.7498 10.1578 27.3698 9.65926C26.1306 13.3371 24.8914 17.0148 23.6522 20.6926C24.0322 20.4032 24.4121 20.1141 24.7921 19.8246C20.6276 19.8246 16.4635 19.8246 12.299 19.8246C12.6789 20.1141 13.0589 20.4032 13.4389 20.6926C11.8812 15.2511 10.3231 9.80956 8.7654 4.36802C8.6205 3.8614 8.15576 3.5 7.62582 3.5C5.56181 3.5 3.49781 3.5 1.4338 3.5C-0.0911573 3.5 -0.0911573 5.86427 1.43346 5.86427Z"
+                  fill="#231F20"
+                />
+              </svg>
+              <span>купити</span>
+            </a>
+            <!-- <div class="product-other-slider-item-volume">300 мл</div> -->
+            <div class="cart-goods-item-right-down-price-wrapper">
+              <div class="cart-goods-item-right-down-price show">
+                684 грн/12 шт
+              </div>
+              <div class="cart-goods-item-right-down-price-action">
+                <span class="action-old-price">684 грн</span>
+                <span class="action-new-price">588 грн/12 шт</span>
+              </div>
+            </div>
+            <a href="/product.html" class="product-other-slider-item-link">
+              про напій
+            </a>
+          </div>
+        </div>
+        <div class="product-other-slider-item">
+          <a href="/product.html" class="product-other-slider-item-images">
+            <img src="/images/48.png" alt="i" />
+          </a>
+          <div class="product-other-slider-item-bottom">
+            <a href="/" class="home-products-item-bottom-buy">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+              >
+                <path
+                  d="M13.8192 28.488C15.0619 28.488 16.0693 27.4806 16.0693 26.2379C16.0693 24.9952 15.0619 23.9878 13.8192 23.9878C12.5765 23.9878 11.5691 24.9952 11.5691 26.2379C11.5691 27.4806 12.5765 28.488 13.8192 28.488Z"
+                  fill="#231F20"
+                />
+                <path
+                  d="M23.2162 28.488C24.4589 28.488 25.4663 27.4806 25.4663 26.2379C25.4663 24.9952 24.4589 23.9878 23.2162 23.9878C21.9735 23.9878 20.9661 24.9952 20.9661 26.2379C20.9661 27.4806 21.9735 28.488 23.2162 28.488Z"
+                  fill="#231F20"
+                />
+                <path
+                  d="M1.43346 5.86427C3.49747 5.86427 5.56148 5.86427 7.62548 5.86427C7.24551 5.57482 6.86554 5.2857 6.48557 4.99625C8.04328 10.4378 9.60134 15.8793 11.1591 21.3209C11.304 21.8271 11.769 22.1889 12.299 22.1889C16.4635 22.1889 20.6276 22.1889 24.7921 22.1889C25.3406 22.1889 25.7628 21.8234 25.932 21.3209C27.1712 17.6431 28.4105 13.9653 29.6497 10.2875C29.8976 9.55152 29.2454 8.79124 28.5098 8.79124C22.036 8.79124 15.5627 8.79124 9.08897 8.79124C7.56435 8.79124 7.56435 11.1555 9.08897 11.1555C15.5627 11.1555 22.036 11.1555 28.5098 11.1555C28.1298 10.6566 27.7498 10.1578 27.3698 9.65926C26.1306 13.3371 24.8914 17.0148 23.6522 20.6926C24.0322 20.4032 24.4121 20.1141 24.7921 19.8246C20.6276 19.8246 16.4635 19.8246 12.299 19.8246C12.6789 20.1141 13.0589 20.4032 13.4389 20.6926C11.8812 15.2511 10.3231 9.80956 8.7654 4.36802C8.6205 3.8614 8.15576 3.5 7.62582 3.5C5.56181 3.5 3.49781 3.5 1.4338 3.5C-0.0911573 3.5 -0.0911573 5.86427 1.43346 5.86427Z"
+                  fill="#231F20"
+                />
+              </svg>
+              <span>купити</span>
+            </a>
+            <!-- <div class="product-other-slider-item-volume">300 мл</div> -->
+            <div class="cart-goods-item-right-down-price-wrapper">
+              <div class="cart-goods-item-right-down-price">684 грн/12 шт</div>
+              <div class="cart-goods-item-right-down-price-action show">
+                <span class="action-old-price">684 грн</span>
+                <span class="action-new-price">588 грн/12 шт</span>
+              </div>
+            </div>
+            <a href="/product.html" class="product-other-slider-item-link">
+              про напій
+            </a>
+          </div>
+        </div>
+        <div class="product-other-slider-item">
+          <a href="/product.html" class="product-other-slider-item-images">
+            <img src="/images/49.png" alt="i" />
+          </a>
+          <div class="product-other-slider-item-bottom">
+            <a href="/" class="home-products-item-bottom-buy">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+              >
+                <path
+                  d="M13.8192 28.488C15.0619 28.488 16.0693 27.4806 16.0693 26.2379C16.0693 24.9952 15.0619 23.9878 13.8192 23.9878C12.5765 23.9878 11.5691 24.9952 11.5691 26.2379C11.5691 27.4806 12.5765 28.488 13.8192 28.488Z"
+                  fill="#231F20"
+                />
+                <path
+                  d="M23.2162 28.488C24.4589 28.488 25.4663 27.4806 25.4663 26.2379C25.4663 24.9952 24.4589 23.9878 23.2162 23.9878C21.9735 23.9878 20.9661 24.9952 20.9661 26.2379C20.9661 27.4806 21.9735 28.488 23.2162 28.488Z"
+                  fill="#231F20"
+                />
+                <path
+                  d="M1.43346 5.86427C3.49747 5.86427 5.56148 5.86427 7.62548 5.86427C7.24551 5.57482 6.86554 5.2857 6.48557 4.99625C8.04328 10.4378 9.60134 15.8793 11.1591 21.3209C11.304 21.8271 11.769 22.1889 12.299 22.1889C16.4635 22.1889 20.6276 22.1889 24.7921 22.1889C25.3406 22.1889 25.7628 21.8234 25.932 21.3209C27.1712 17.6431 28.4105 13.9653 29.6497 10.2875C29.8976 9.55152 29.2454 8.79124 28.5098 8.79124C22.036 8.79124 15.5627 8.79124 9.08897 8.79124C7.56435 8.79124 7.56435 11.1555 9.08897 11.1555C15.5627 11.1555 22.036 11.1555 28.5098 11.1555C28.1298 10.6566 27.7498 10.1578 27.3698 9.65926C26.1306 13.3371 24.8914 17.0148 23.6522 20.6926C24.0322 20.4032 24.4121 20.1141 24.7921 19.8246C20.6276 19.8246 16.4635 19.8246 12.299 19.8246C12.6789 20.1141 13.0589 20.4032 13.4389 20.6926C11.8812 15.2511 10.3231 9.80956 8.7654 4.36802C8.6205 3.8614 8.15576 3.5 7.62582 3.5C5.56181 3.5 3.49781 3.5 1.4338 3.5C-0.0911573 3.5 -0.0911573 5.86427 1.43346 5.86427Z"
+                  fill="#231F20"
+                />
+              </svg>
+              <span>купити</span>
+            </a>
+            <!-- <div class="product-other-slider-item-volume">300 мл</div> -->
+            <div class="cart-goods-item-right-down-price-wrapper">
+              <div class="cart-goods-item-right-down-price">684 грн/12 шт</div>
+              <div class="cart-goods-item-right-down-price-action show">
+                <span class="action-old-price">684 грн</span>
+                <span class="action-new-price">588 грн/12 шт</span>
+              </div>
+            </div>
+            <a href="/product.html" class="product-other-slider-item-link">
+              про напій
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% include './components/_footer.html' %}
+</main>
+
+{% endblock %} {% block footer_scripts %} {% endblock %}

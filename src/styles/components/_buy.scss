@@ -1,0 +1,353 @@
+.buy-main {
+  width: 100%;
+}
+.buy-partners {
+  width: 100%;
+  background: #f2f5f5;
+  padding-top: 60px;
+}
+
+.buy-contact {
+  width: 100%;
+  display: flex;
+  @include md {
+    flex-direction: column;
+  }
+}
+.buy-contact-image {
+  width: 45.5%;
+  aspect-ratio: 1/1.04;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  @include md {
+    width: 100%;
+    height: 688px;
+    aspect-ratio: unset;
+  }
+  @include sm {
+    height: 334px;
+  }
+}
+.buy-contact-form-wrapper {
+  width: 54.5%;
+  position: relative;
+  z-index: 2;
+  canvas {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    resize: both;
+    z-index: 1;
+  }
+  @include md {
+    width: 100%;
+  }
+}
+.buy-contact-form {
+  height: 100%;
+  padding: 50px 80px;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @include sm {
+    padding: 40px 20px 60px;
+  }
+}
+.buy-contact-form-title {
+  font-family: "Tenor Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 91%;
+  color: #231f20;
+  margin-bottom: 20px;
+  @include md {
+    font-size: 40px;
+  }
+  @include sm {
+    font-size: 30px;
+    margin-bottom: 18px;
+  }
+}
+.buy-contact-form-description {
+  font-family: "Myriad Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #231f20;
+  margin-bottom: 31px;
+  @include md {
+    font-size: 18px;
+  }
+  @include sm {
+    margin-bottom: 25px;
+  }
+}
+
+.hire-modal-input {
+  width: 100%;
+  position: relative;
+  margin-bottom: 30px;
+  @include sm {
+    margin-bottom: 25px;
+  }
+  input:focus ~ .floating-label,
+  input.empty ~ .floating-label {
+    top: -14px;
+    font-size: 12px;
+    opacity: 1;
+    @include md {
+      font-size: vw(14px, 1024px);
+    }
+    @include sm {
+      font-size: vw(10px, 375px);
+    }
+  }
+  textarea:focus ~ .floating-label,
+  textarea.empty ~ .floating-label {
+    top: -14px;
+    font-size: 12px;
+    opacity: 1;
+    @include md {
+      font-size: vw(14px, 1024px);
+    }
+    @include sm {
+      font-size: vw(10px, 375px);
+    }
+  }
+
+  .inputText {
+    width: 100%;
+    border: none;
+    font-family: "Myriad Pro";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: #231f20;
+    padding-bottom: vw(14px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    position: relative;
+    // &:focus {
+    //   border-bottom: 2px solid #5910ff;
+    // }
+    // &:hover {
+    //   border-bottom: 2px solid #5910ff;
+    // }
+    @include md {
+      font-size: 16px;
+    }
+    @include sm {
+      font-size: vw(16px, 375px);
+      padding-bottom: 5px;
+    }
+  }
+  .textareaText {
+    max-width: 100%;
+    width: 100%;
+    border: none;
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: vw(30px);
+    line-height: 101%;
+    letter-spacing: -0.06em;
+    color: #000;
+    padding: 0;
+    overflow: hidden;
+    min-height: vw(53px);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+    // &:focus {
+    //   border-bottom: 2px solid #5910ff;
+    // }
+    // &:hover {
+    //   border-bottom: 2px solid #5910ff;
+    // }
+    @include md {
+      font-size: vw(30px, 1024px);
+      height: vw(50px, 1024px);
+    }
+    @include sm {
+      font-size: vw(16px, 375px);
+      height: vw(28px, 375px);
+    }
+  }
+  .floating-label {
+    position: absolute;
+    pointer-events: none;
+    left: 0;
+    top: 4px;
+    transition: 0.2s ease all;
+    font-family: "Myriad Pro";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: #9f9f9f;
+
+    @include md {
+      font-size: 16px;
+    }
+    @include sm {
+      font-size: vw(16px, 375px);
+    }
+  }
+  &.error {
+    .inputText {
+      border-bottom: 1px solid #ff0041;
+    }
+    .hire-modal-input-error-text {
+      display: block;
+    }
+  }
+}
+
+.hire-modal-input-error-text {
+  font-family: "Myriad Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: right;
+  color: #ff0041;
+  position: absolute;
+  bottom: -15px;
+  right: 0;
+  display: none;
+}
+
+.buy-contact-form-submit {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  width: fit-content;
+  padding: 0 23px;
+  height: 66px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 40px;
+  span {
+    font-family: "Myriad Pro";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 91%;
+    color: #231f20;
+    position: relative;
+    z-index: 2;
+  }
+  &:hover {
+    .buy-contact-form-submit-circle {
+      width: 100%;
+    }
+  }
+  @include md {
+    margin-top: 20px;
+    height: 50px;
+    span {
+      font-size: 18px;
+    }
+  }
+  @include sm {
+    margin-top: 20px;
+    height: 50px;
+    span {
+      font-size: 18px;
+    }
+  }
+}
+
+.buy-contact-form-submit-circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 66px;
+  height: 66px;
+  background: #ffde58;
+  border-radius: 35px;
+  z-index: 1;
+  transition: all 0.3s ease;
+  @include md {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.buy-contact-test {
+  width: 100%;
+  display: flex;
+  margin-top: 60px;
+  @include md {
+    flex-direction: column;
+  }
+}
+.buy-contact-success-wrapper {
+  padding: 80px 50px;
+  width: 54.5%;
+  position: relative;
+  z-index: 2;
+  display: none;
+  &.show {
+    display: block;
+  }
+  canvas {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    resize: both;
+    z-index: 1;
+  }
+  @include md {
+    width: 100%;
+    padding: 130px 50px;
+  }
+  @include sm {
+    padding: 100px 20px;
+  }
+}
+.buy-contact-success-content {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+.buy-contact-success-title {
+  font-family: "Tenor Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 91%;
+  color: #231f20;
+  margin-bottom: 30px;
+  @include md {
+    font-size: 40px;
+  }
+}
+.buy-contact-success-text {
+  font-family: "Myriad Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #231f20;
+  p {
+    margin-bottom: 10px;
+  }
+  @include md {
+    font-size: 18px;
+  }
+}

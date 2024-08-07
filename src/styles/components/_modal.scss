@@ -1,0 +1,459 @@
+.modal {
+  $this: &;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  min-height: 100vh;
+  z-index: 999;
+  transition: opacity 0.1s ease;
+  overflow-y: auto;
+
+  @include md {
+    overflow-x: hidden;
+    min-height: var(--vh);
+    height: var(--vh);
+  }
+
+  &__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #020219;
+    opacity: 0.8;
+  }
+
+  &__close {
+    position: absolute;
+    z-index: 100;
+    background-color: transparent;
+    top: 4px;
+    right: 381px;
+    border: 0;
+    cursor: pointer;
+
+    & * {
+      cursor: pointer;
+    }
+
+    svg {
+      display: block;
+      width: 53px;
+      height: 53px;
+    }
+    @include md {
+      top: 23px;
+      right: 3px;
+      svg {
+        width: 30px;
+        height: 30px;
+      }
+    }
+    @include sm {
+    }
+  }
+
+  &__content {
+    position: absolute;
+    left: 50%;
+    top: 70px;
+    max-width: 1197px;
+    width: 100%;
+    transform: translatex(-50%);
+    transition: transform 0.3s ease;
+    @include md {
+      width: 100%;
+      left: 0;
+      top: 0;
+      max-width: 1197px;
+      width: 100%;
+      transform: translatex(0%);
+    }
+    @include sm {
+    }
+    &.thanks {
+      max-width: 819px;
+      .modal__close {
+        width: 53px;
+        height: 53px;
+        top: 0;
+        right: 0;
+        z-index: 30;
+      }
+    }
+  }
+}
+.modal-form {
+  width: 100%;
+}
+.modal-circle {
+  width: 819px;
+  height: 778px;
+  background: url("../images/modal-circle-bg.svg") no-repeat center center;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px 93px;
+  &.circle2 {
+    margin-left: auto;
+    margin-top: -190px;
+    .modal-numbers {
+      margin-top: 50px;
+    }
+  }
+  &.circle3 {
+    margin-top: -190px;
+    margin-bottom: 50px;
+  }
+  @include md {
+    width: 100%;
+    height: auto;
+    background: #000000;
+    padding: 60px 30px 0;
+    &.circle2 {
+      margin-left: auto;
+      margin-top: 0px;
+      .modal-numbers {
+        margin-top: 50px;
+      }
+      .modal-circle-logo {
+        display: none;
+      }
+    }
+    &.circle3 {
+      margin-top: 0px;
+      margin-bottom: 30px;
+      padding-bottom: 70px;
+      .modal-circle-logo {
+        display: none;
+      }
+    }
+  }
+  @include sm {
+    &.circle2 {
+      .modal-numbers {
+        margin-top: 29px;
+      }
+    }
+    &.circle3 {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.modal-circle-logo {
+  margin-bottom: 64px;
+  @include sm {
+    margin-bottom: 20px;
+  }
+}
+.modal-circle-title {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 200%;
+  color: #ffffff;
+  margin-bottom: 30px;
+  @include sm {
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 30px;
+    align-self: start;
+  }
+}
+.modal-input {
+  width: 100%;
+  position: relative;
+  margin-bottom: 32px;
+  @include sm {
+    margin-bottom: 18px;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    background: linear-gradient(90deg, #6deae7 2.5%, #459bc8 50.74%, #3c70b5 100%);
+    width: 100%;
+    height: 1px;
+  }
+  input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    font-family: "Noto Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 200%;
+    color: #ffffff;
+    @include sm {
+      font-size: 14px;
+    }
+    &::placeholder {
+      font-family: "Noto Sans";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 200%;
+      color: #ffffff;
+      @include sm {
+        font-size: 14px;
+      }
+    }
+    &:focus {
+      &::placeholder {
+        opacity: 0;
+      }
+    }
+  }
+  &.error {
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      background: #f40c0c;
+      width: 100%;
+      height: 1px;
+    }
+    .input-error-text {
+      display: block;
+    }
+  }
+}
+.input-error-text {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 200%;
+  color: #f40c0c;
+  position: absolute;
+  left: 0;
+  bottom: -24px;
+  display: none;
+}
+.modal-numbers {
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 95px;
+  text-align: center;
+  color: #ffffff;
+  @include sm {
+    font-size: 40px;
+    line-height: 54px;
+    margin-top: 20px;
+  }
+}
+
+.modal-textarea {
+  width: 100%;
+  position: relative;
+  margin-bottom: 32px;
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    background: linear-gradient(90deg, #6deae7 2.5%, #459bc8 50.74%, #3c70b5 100%);
+    width: 100%;
+    height: 1px;
+  }
+  textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    font-family: "Noto Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 200%;
+    color: #ffffff;
+
+    &::placeholder {
+      font-family: "Noto Sans";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 200%;
+      color: #ffffff;
+    }
+    &:focus {
+      &::placeholder {
+        opacity: 0;
+      }
+    }
+  }
+  @include sm {
+    textarea {
+      font-size: 14px;
+      line-height: 200%;
+      &::placeholder {
+        font-size: 14px;
+        line-height: 200%;
+      }
+    }
+  }
+}
+
+.modal-checkboxes {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 24px;
+  @include sm {
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+}
+.modal-checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  &:last-of-type {
+    left: 30px;
+  }
+}
+.modal-checkbox[type="radio"]:checked + label {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 150%;
+  background: linear-gradient(92.22deg, #6deae7 0%, #459bc8 53.74%, #3c70b5 107.46%, rgba(35, 35, 35, 0) 107.47%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  @include sm {
+    font-size: 16px;
+    line-height: 150%;
+  }
+}
+.modal-checkbox[type="radio"]:not(:checked) + label {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 150%;
+  color: #ffffff;
+  height: 36px;
+  @include sm {
+    font-size: 16px;
+    line-height: 150%;
+  }
+}
+.modal-checkbox-label {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 150%;
+  color: #ffffff;
+  height: 36px;
+  cursor: pointer;
+}
+.modal-circle-bottom {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include sm {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    .modal-circle-bottom-btn {
+      margin-left: 0;
+      margin-top: 40px;
+    }
+  }
+}
+.modal-numbers {
+}
+.modal-circle-bottom-btn {
+  border: none;
+  background: transparent;
+  margin-left: 65px;
+}
+
+.thanks-circle {
+  width: 819px;
+  height: 778px;
+  background: url("../images/modal-circle-bg.svg") no-repeat center center;
+  background-size: contain;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px 93px;
+  position: relative;
+  @include md {
+    width: 100%;
+    height: 100vh;
+    background: #000;
+  }
+  @include sm {
+    padding: 60px 20px;
+  }
+}
+.thanks-circle-logo {
+  margin-bottom: 31px;
+}
+.thanks-circle-title {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 200%;
+  background: linear-gradient(100.2deg, #6deae7 -15.57%, #459bc8 54.02%, #3c70b5 122.18%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin-bottom: 30px;
+  @include sm {
+    font-size: 24px;
+    line-height: 200%;
+    margin-bottom: 20px;
+  }
+}
+.thanks-circle-text {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #ffffff;
+  @include sm {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+.thanks-circle-bottom {
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 95px;
+  color: #ffffff;
+  @include sm {
+    font-size: 36px;
+    line-height: 49px;
+    margin-top: 30px;
+  }
+}

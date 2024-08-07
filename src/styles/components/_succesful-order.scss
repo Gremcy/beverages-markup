@@ -1,0 +1,77 @@
+.succesful-fluid {
+  padding: 200px 130px 130px;
+  width: 100%;
+  @include sm {
+    padding: 110px 20px 80px;
+  }
+}
+.succesful-content {
+  max-width: 424px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.succesful-icon {
+  margin-bottom: 20px;
+  @include sm {
+    svg {
+      width: 80px;
+      height: 80px;
+    }
+  }
+}
+.succesful-title {
+  color: #424242;
+  font-family: Tenor Sans;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 91%; /* 43.68px */
+  letter-spacing: -2.4px;
+  margin-bottom: 40px;
+  text-align: center;
+  @include sm {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+}
+.succesful-description {
+  text-align: center;
+  color: var(--black, #231f20);
+  text-align: center;
+  font-family: Myriad Pro;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.4px;
+  p {
+    margin-bottom: 15px;
+  }
+  @include sm {
+    font-size: 19px;
+  }
+}
+.error-odrer-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 16px;
+  border-radius: 25px;
+  background: var(--yellow-1, #fecc00);
+  color: #231f20;
+  text-align: right;
+  font-family: Myriad Pro;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 91%; /* 18.2px */
+  margin-top: 40px;
+  @include sm {
+    font-size: 16px;
+    margin-top: 30px;
+  }
+}

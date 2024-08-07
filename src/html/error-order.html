@@ -1,0 +1,37 @@
+{% set body_class = "error-order-page" %} {% extends "./_layout.html" %} {% block
+content %}
+<main class="order-main">
+  {% include './components/_header.html' %}
+
+  <div class="succesful-fluid">
+    <div class="succesful-content">
+      <div class="succesful-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" fill="none">
+          <g clip-path="url(#clip0_1319_8312)">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M34.532 38.9527L61.0485 65.4692C62.2683 66.689 64.2491 66.689 65.4688 65.4692C66.6886 64.2495 66.6886 62.2687 65.4688 61.0489L38.9523 34.5324C37.7326 33.3127 35.7518 33.3127 34.532 34.5324C33.3123 35.7522 33.3123 37.733 34.532 38.9527Z" fill="#F23C32"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M61.0492 34.5306L34.5327 61.0471C33.313 62.2668 33.313 64.2476 34.5327 65.4674C35.7525 66.6871 37.7333 66.6871 38.953 65.4674L65.4695 38.9509C66.6893 37.7311 66.6893 35.7503 65.4695 34.5306C64.2498 33.3108 62.269 33.3108 61.0492 34.5306Z" fill="#F23C32"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M74.3065 74.3059C60.8918 87.7206 39.1085 87.7206 25.6938 74.3059C12.2791 60.8912 12.2791 39.1079 25.6938 25.6932C39.1085 12.2785 60.8918 12.2785 74.3065 25.6932C84.8813 36.2679 87.122 52.0426 81.0245 64.8196C80.2807 66.3774 80.9422 68.2429 82.4974 68.9867C84.0539 69.7291 85.9221 69.0675 86.6646 67.511C93.8691 52.4125 91.224 33.7701 78.7268 21.2729C62.8726 5.41867 37.1277 5.41865 21.2735 21.2729C5.4193 37.1271 5.41932 62.872 21.2735 78.7262C37.1277 94.5804 62.8726 94.5804 78.7268 78.7262C79.9466 77.5064 79.9466 75.5256 78.7268 74.3059C77.5071 73.0861 75.5263 73.0861 74.3065 74.3059Z" fill="#F23C32"/>
+          </g>
+          <defs>
+            <clipPath id="clip0_1319_8312">
+              <rect width="100" height="100" fill="white"/>
+            </clipPath>
+          </defs>
+        </svg>
+      </div>
+      <div class="succesful-title">
+        Щось пішло не так
+      </div>
+      <div class="succesful-description">
+        <p>Спробуйте ще раз або зверніться до свого банку</p>
+      </div>
+      <div class="error-odrer-btn">
+        спробувати знову
+      </div>
+    </div>
+  </div>
+ 
+  {% include './components/_footer.html' %}
+</main>
+
+{% endblock %} {% block footer_scripts %} {% endblock %}

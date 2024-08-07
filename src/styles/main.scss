@@ -1,0 +1,46 @@
+@import "components/_reset";
+@import "components/_fonts";
+@import "components/_mixins";
+@import "components/_helpers";
+
+@import "components/_index";
+@import "components/_modal";
+@import "components/_menu";
+@import "components/_header";
+@import "components/_footer";
+@import "components/_products";
+@import "components/_buy";
+@import "components/_product";
+@import "components/_about";
+@import "components/_cart";
+@import "components/_order";
+@import "components/_succesful-order";
+@import "components/_information";
+
+html,
+body {
+  font-family: "Tenor Sans";
+  font-weight: 400;
+  &.is-hidden {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+}
+html {
+  background: #fdfffc;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: bottom;
+}
